@@ -1,50 +1,69 @@
-# React + TypeScript + Vite
+# Go Ghibli
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Note: This project is currently incomplete.**
 
-Currently, two official plugins are available:
+**This is a school assignment project.**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
 
-## Expanding the ESLint configuration
+**Go Ghibli** is a school assignment designed to help you practice and integrate TypeScript with React while building a frontend application. The primary goal is to refresh your knowledge of React, gain hands-on experience with TypeScript, and create a visually appealing app that interacts with the Studio Ghibli API.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Objectives
 
-- Configure the top-level `parserOptions` property like this:
+- **Review React**: Revisit React fundamentals and build a React-based frontend.
+- **Practice TypeScript**: Apply TypeScript to variables, functions, and type aliases throughout the project.
+- **AJAX Integration**: Fetch data asynchronously from the Studio Ghibli API.
+- **Data Validation**: Use Joi to validate data received from the API.
+- **CSS Styling**: Create an attractive and user-friendly interface.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Features
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. **Fetch Film Data**:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+   - Retrieve film data from the Studio Ghibli API.
+   - Display information such as English title, description, at least one image, and director.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+2. **TypeScript Integration**:
+
+   - Use TypeScript for all variables, state management, and function definitions.
+   - Define type aliases to describe the data structure from the API.
+
+3. **Search Functionality**:
+
+   - Implement a search feature that allows users to search for films by their English title.
+   - The search should operate on the locally stored film data, not through additional API calls.
+
+4. **Sorting and Display**:
+
+   - Sort films by their release year, with the most recent films appearing first.
+   - Ensure a clean and visually appealing display of film information.
+
+5. **Favorites Feature**:
+   - Allow users to "favorite" films.
+   - Display a separate view for favorited films.
+   - Provide functionality for users to reorder their favorite films.
+   - Allow users to toggle a "watched" status for films in the favorites view.
+
+## Getting Started
+
+1. **Setup**:
+
+   - Clone the repository.
+   - Install dependencies using `npm install` or `yarn install`.
+
+2. **Run the Project**:
+
+   - Start the development server with `npm start` or `yarn start`.
+
+3. **Validation**:
+
+   - Joi is used to validate data. Ensure all API data conforms to the expected types and formats.
+
+4. **Styling**:
+   - Customize CSS to enhance the visual appeal of the application.
+
+## Future Work
+
+The project is still in progress. Upcoming tasks include implementing additional features, refining the user interface, and ensuring all functionalities are fully operational.
+
+Feel free to explore, contribute, and provide suggestions as the project evolves!
