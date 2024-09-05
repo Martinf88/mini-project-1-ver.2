@@ -1,0 +1,168 @@
+/* .new-amsterdam-regular {
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: calc(1em + 0.5rem);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "New Amsterdam", sans-serif;
+  color: #edf7f7;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.btn {
+  border: 1px solid #edf7f7;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+}
+
+/* .btn-wrapper {
+  margin-right: 1em;
+} */
+
+.fav-btn {
+  margin-right: 0.5em;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  color: #edf7f7;
+  background-color: #0b5c5c;
+  padding: 0.5em 1em;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  background-color: #edf7f7;
+  background-image: url("../public/20140816.ghibliA-1024x687.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Card container */
+.card {
+  max-width: 300px;
+  background-color: #0b5c5c;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 20px;
+  color: #e2f4f4;
+}
+
+.like-icon {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3em 0.3em 0;
+  border-bottom: 1px solid #edf7f7;
+  background-color: rgb(15, 15, 15);
+}
+
+.like-icon p {
+  font-size: 1.3em;
+}
+
+.like-icon button {
+  cursor: pointer;
+}
+
+.size-6 {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+.size-6:hover {
+  fill: #e2f4f4;
+}
+
+/* Card header */
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 1px;
+}
+
+.film-year {
+  font-style: italic;
+}
+
+.director,
+.producer {
+  font-size: 1.2em;
+}
+
+/* .producer {
+  margin-bottom: 0.6em;
+} */
+/* Card body */
+.card-body {
+  padding: 16px;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.movie-poster {
+}
+
+.description {
+}
+
+.active {
+  font-weight: bold;
+  color: blue;
+}
+
+/* Favorites Page */
+
+.fav-page-header {
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 3em;
+}
